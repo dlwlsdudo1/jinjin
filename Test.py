@@ -39,7 +39,7 @@ print(video)
 # 예제 3-47 반복문으로 채널 정보 추출하기
 channel_list = soup.select('tbody > tr') 
 for channel in channel_list:
-    title = channel.select('h1 > a')[0].text.strip()
+    title = channel.select('h1 > a')[0].text.strip() # error : IndexError: list index out of range
     category = channel.select('p.category')[0].text.strip()
     subscriber = channel.select('.subscriber_cnt')[0].text
     view = channel.select('.view_cnt')[0].text
