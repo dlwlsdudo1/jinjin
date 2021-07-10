@@ -46,6 +46,8 @@ try:
             #print("슈퍼챗 갯수 : ", superchat_num)
             #print("슈퍼챗 수입 : ", superchat)
             #print("순위? = ",classe)
+            
+            # utag None값일 경우 break현상 elif? else? 사용하여 유연하게 뽑는게 목표
             print("태그1 = ",utag)
             print("=" * 100)
 
