@@ -36,6 +36,7 @@ try:
         # print(k)
         if asd != "":
             qwe = boxItem.find("a")['title']
+            fff = boxItem.find("a")['href']
             print(qwe)
 
         
