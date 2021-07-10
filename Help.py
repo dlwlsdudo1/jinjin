@@ -41,6 +41,9 @@ try:
             superchat = boxItem.find("span", {"class":"fluc-label fluc-label--mono-font fluc-label--ko fluc-label--symbol-math up"}).text
             superchat_num = boxItem.find("span", {"class":"fluc-label fluc-label--mono-color fluc-label--mono-font fluc-label--ko fluc-label--symbol-math up"}).text
             utag = boxItem.find("li", {"class":"ttags__item"}).text
+            if utag == None:
+                utag1 = utag
+            #실험
             #print("타이틀 = ", title)
             #print("name = ", name)
             #print("슈퍼챗 갯수 : ", superchat_num)
