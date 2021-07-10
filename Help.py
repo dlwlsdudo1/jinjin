@@ -34,10 +34,20 @@ try:
         # k = re.sub('<.*?>','',asd
         print(asd)
         # print(k)
-        if asd != "":
-            qwe = boxItem.find("a")['title']
-            fff = boxItem.find("a")['href']
-            print(qwe)
+        if erpass != "":
+            title = boxItem.find("a")['title']
+            name = boxItem.find("img")['alt']
+            classe = boxItem.find("div", {"class":"current"}).text
+            superchat = boxItem.find("span", {"class":"fluc-label fluc-label--mono-font fluc-label--ko fluc-label--symbol-math up"}).text
+            superchat_num = boxItem.find("span", {"class":"fluc-label fluc-label--mono-color fluc-label--mono-font fluc-label--ko fluc-label--symbol-math up"}).text
+            utag = boxItem.find("li", {"class":"ttags__item"}).text
+            #print("타이틀 = ", title)
+            #print("name = ", name)
+            #print("슈퍼챗 갯수 : ", superchat_num)
+            #print("슈퍼챗 수입 : ", superchat)
+            #print("순위? = ",classe)
+            print("태그1 = ",utag)
+            print("=" * 100)
 
         
 
