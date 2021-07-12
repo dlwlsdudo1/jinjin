@@ -1,0 +1,4 @@
+cmd 실행 - dataset dir 지정 - 입력
+
+curl -XPOST http://localhost:9200/_bulk -H "Content-Type: application/json" --data-binary @bulk_bank.json
+curl -XPOST http://localhost:9200/_bulk -H "Content-Type: application/json" --data-binary @bulk_accounts.json
