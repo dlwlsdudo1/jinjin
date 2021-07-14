@@ -1,0 +1,9 @@
+logstash -f ../config/covid-19.conf
+filebeat -e -c filebeat.yml
+
+
+ELS - logstash - filebeat
+
+cmd 경로지정 후 순차적 실행 
+
+log stash 결과값 나오면 ELS로 들어가서 정제 및 시각화
